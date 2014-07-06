@@ -2,28 +2,28 @@ Projectile = {
 	__proto__ : Object.create(Entity),
 	xTile : {
 		name : "xTile",
-		description : "X coordinate of the item\"s position in the chunk.",
+		description : "X coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	yTile : {
 		name : "yTile",
-		description : "Y coordinate of the item\"s position in the chunk.",
+		description : "Y coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	zTile : {
 		name : "zTile",
-		description : "Z coordinate of the item\"s position in the chunk.",
+		description : "Z coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	inTile : {
 		name : "inTile",
-		description : "The "shake" when arrows hit a block.",
+		description : "The \"shake\" when arrows hit a block.",
 		type : "byte",
 		def : 0,
 		value : null

@@ -164,7 +164,7 @@ Entity = {
 		def : {},
 		value : null
 	}
-}
+};
 
 
 // Dynamic Tiles
@@ -178,7 +178,7 @@ PrimedTnt = {
 		def : 100,
 		value : null
 	}
-}
+};
 
 FallingSand = {
 	__proto__ : Object.create(Entity),
@@ -205,7 +205,7 @@ FallingSand = {
 	},
 	time : {
 		name : "Time",
-		description : "The number of ticks the entity has existed. If set to 0, the moment it ticks to 1, it will vanish if the block at its location has a different ID than the entitys TileID. If the block at its location has the same ID as its TileID when Time ticks from 0 to 1, the block will instead be deleted, and the entity will continue to fall, having overwritten it. (This was the result of Mojangs failed attempt to "fix" infinite sand/gravel/dragon egg/anvil/etc. generators by trying to have the falling sand entity delete the duplicated block the next tick) When Time goes above 600, or above 100 while the block is below Y=0, the entity is deleted.",//entity " s Mojang " s
+		description : "The number of ticks the entity has existed. If set to 0, the moment it ticks to 1, it will vanish if the block at its location has a different ID than the entitys TileID. If the block at its location has the same ID as its TileID when Time ticks from 0 to 1, the block will instead be deleted, and the entity will continue to fall, having overwritten it. (This was the result of Mojangs failed attempt to \"fix\" infinite sand/gravel/dragon egg/anvil/etc. generators by trying to have the falling sand entity delete the duplicated block the next tick) When Time goes above 600, or above 100 while the block is below Y=0, the entity is deleted.",//entity " s Mojang " s
 		type : "byte",
 		def : 0,
 		value : null
@@ -238,5 +238,5 @@ FallingSand = {
 		def : 2.0,
 		value : null
 	}
-}
+};
 

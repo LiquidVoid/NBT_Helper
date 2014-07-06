@@ -36,9 +36,9 @@ function Tag(template) {
 			return this.value;
 		}
 		else {
-			throw new Error(""" + val + "" is not a valid " + this.type + ".");
+			throw new Error("\"" + val + "\" is not a valid " + this.type + ".");
 		}
-	}
+	};
 	
 	function isInt(n) {		//Checks that n is not floating point, and that it is a number.
 		return (typeof n == "number") && (n % 1 === 0);
@@ -46,7 +46,7 @@ function Tag(template) {
 	
 	this.toString = function() { 
 		var name = "";
-		if (this.name != null) {	//When there is a name
+		if (this.name !== null) {	//When there is a name
 			name = this.name + ":";	//We define it, or else it will be an empty string
 		}
 		
@@ -59,7 +59,7 @@ function Tag(template) {
 		else {
 			return name + this.value.toString();
 		}	
-	}
+	};
 	
 	
 	this.setVal(this.value);

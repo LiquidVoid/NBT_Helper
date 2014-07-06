@@ -170,7 +170,7 @@ Mob = {
 	},
 	healF : {
 		name : "HealF",
-		description : " A float value of health. If it\"s set, Health is ignored.",
+		description : " A float value of health. If it\'s set, Health is ignored.",
 		type : "float",
 		def : 0.0,
 		value : null
@@ -184,7 +184,7 @@ Mob = {
 	},
 	attackTime : {
 		name : "AttackTime",
-		description : "Number of ticks the mob\"s "invincibility shield" lasts after the mob was last struck. 0 when not recently hit.",
+		description : "Number of ticks the mob\'s \"invincibility shield\" lasts after the mob was last struck. 0 when not recently hit.",
 		type : "short",
 		def : 0,
 		value : null
@@ -205,7 +205,7 @@ Mob = {
 	},
 	attributes : {
 		name : "Attributes",
-		description : "A list of Attributes for this mob. These are used for many purposes in internal calculations, and can be considered a mobs "statistics".",
+		description : "A list of Attributes for this mob. These are used for many purposes in internal calculations, and can be considered a mobs \"statistics\".",
 		type : "list",
 		def : {},
 		value : null
@@ -319,7 +319,7 @@ Mob = {
 	},
 	customName : {
 		name : "CustomName",
-		description : "The custom name of this entity. Appears in player death messages and villager trading interfaces, as well as above the mob\"s head when your cursor is over it. May not exist.",
+		description : "The custom name of this entity. Appears in player death messages and villager trading interfaces, as well as above the mob\'s head when your cursor is over it. May not exist.",
 		type : "string",
 		def : 0,
 		value : null
@@ -391,7 +391,7 @@ Drop = {
 	},
 	age : {
 		name : "Age",
-		description : "The number of ticks the item has been "untouched". After 6000 ticks (5 minutes) the item is destroyed.",
+		description : "The number of ticks the item has been \"untouched\". After 6000 ticks (5 minutes) the item is destroyed.",
 		type : "int",
 		def : 6000,
 		value : null
@@ -401,28 +401,28 @@ Projectile = {
 	__proto__ : Object.create(Entity),
 	xTile : {
 		name : "xTile",
-		description : "X coordinate of the item\"s position in the chunk.",
+		description : "X coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	yTile : {
 		name : "yTile",
-		description : "Y coordinate of the item\"s position in the chunk.",
+		description : "Y coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	zTile : {
 		name : "zTile",
-		description : "Z coordinate of the item\"s position in the chunk.",
+		description : "Z coordinate of the item\'s position in the chunk.",
 		type : "short",
 		def : 0,
 		value : null
 	},
 	inTile : {
 		name : "inTile",
-		description : "The "shake" when arrows hit a block.",
+		description : "The \"shake\" when arrows hit a block.",
 		type : "byte",
 		def : 0,
 		value : null
@@ -467,7 +467,7 @@ Minecart = {
 	},
 	customName : {
 		name : "CustomName",
-		description : "Optional. The custom name of this minecart. ("@" by default for command block minecarts)",
+		description : "Optional. The custom name of this minecart. (\"@\" by default for command block minecarts)",
 		type : "string",
 		def : null,
 		value : null
@@ -1193,7 +1193,7 @@ MinecartSpawner = {
 	},
 	maxNearbyEntities : {
 		name : "MaxNearbyEntities",
-		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\"s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
+		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\'s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
 		type : "short",
 		def : 8,
 		value : null
@@ -1363,7 +1363,7 @@ Cauldron = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1387,7 +1387,7 @@ Chest = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1414,7 +1414,7 @@ Control = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1441,7 +1441,7 @@ Dropper = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1458,7 +1458,7 @@ EnchantTable = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1471,7 +1471,7 @@ Furnace = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1502,7 +1502,7 @@ Hopper = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null
@@ -1584,7 +1584,7 @@ MobSpawner = {
 	},
 	maxNearbyEntities : {
 		name : "MaxNearbyEntities",
-		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\"s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
+		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\'s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
 		type : "short",
 		def : 8,
 		value : null
@@ -1721,7 +1721,7 @@ Trap = {
 	__proto__ : Object.create(TileEntity),
 	customName : {
 		name : "CustomName",
-		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual "@" when using commands such as "say" and "tell".",
+		description : "Optional. The name of this container, which will display in its GUI where the default name ordinarily is. For Command Blocks, the name will replace the usual \"@\" when using commands such as \"say\" and \"tell\".",
 		type : "string",
 		def : null,
 		value : null

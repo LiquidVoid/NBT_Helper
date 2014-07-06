@@ -9,7 +9,7 @@ Mob = {
 	},
 	healF : {
 		name : "HealF",
-		description : " A float value of health. If it\"s set, Health is ignored.",
+		description : " A float value of health. If it\'s set, Health is ignored.",
 		type : "float",
 		def : 0.0,
 		value : null
@@ -23,7 +23,7 @@ Mob = {
 	},
 	attackTime : {
 		name : "AttackTime",
-		description : "Number of ticks the mob\"s "invincibility shield" lasts after the mob was last struck. 0 when not recently hit.",
+		description : "Number of ticks the mob\'s \"invincibility shield\" lasts after the mob was last struck. 0 when not recently hit.",
 		type : "short",
 		def : 0,
 		value : null
@@ -44,7 +44,7 @@ Mob = {
 	},
 	attributes : {
 		name : "Attributes",
-		description : "A list of Attributes for this mob. These are used for many purposes in internal calculations, and can be considered a mobs "statistics".",
+		description : "A list of Attributes for this mob. These are used for many purposes in internal calculations, and can be considered a mobs \"statistics\".",
 		type : "list",
 		def : {},
 		value : null
@@ -168,7 +168,7 @@ Mob = {
 	},
 	customName : {
 		name : "CustomName",
-		description : "The custom name of this entity. Appears in player death messages and villager trading interfaces, as well as above the mob\"s head when your cursor is over it. May not exist.",
+		description : "The custom name of this entity. Appears in player death messages and villager trading interfaces, as well as above the mob\'s head when your cursor is over it. May not exist.",
 		type : "string",
 		def : "",
 		value : null
@@ -194,7 +194,7 @@ Mob = {
 		def : {},//UUIDMost, UUIDLeast, X, Y, Z<---
 		value : null
 	}
-}
+};
 
 
 //	Sub classes
@@ -215,7 +215,7 @@ Breedable = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 
 Tamable = {
@@ -234,7 +234,7 @@ Tamable = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 
 
@@ -249,7 +249,7 @@ Bat = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Creeper = {
 	__proto__ : Object.create(Mob),
@@ -281,7 +281,7 @@ Creeper = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Enderman = {
 	__proto__ : Object.create(Mob),	
@@ -299,7 +299,7 @@ Enderman = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 EntityHorse = {
 	__proto__ : Object.create(Breedable),
@@ -387,7 +387,7 @@ EntityHorse = {
 		def : {},
 		value : null
 	}
-}
+};
 
 Ghast = {
 	__proto__ : Object.create(Mob),	
@@ -398,7 +398,7 @@ Ghast = {
 		def : 1,
 		value : null
 	}
-}
+};
 
 LavaSlime = {
 	__proto__ : Object.create(Mob),	
@@ -409,7 +409,7 @@ LavaSlime = {
 		def : 1,
 		value : null
 	}
-}
+};
 
 Ozelot = {
 	__proto__ : Object.create(Tamable),
@@ -420,7 +420,7 @@ Ozelot = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Pig = {
 	__proto__ : Object.create(Breedable),
@@ -431,7 +431,7 @@ Pig = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 PigZombie = {
 	__proto__ : Object.create(Mob),	
@@ -442,7 +442,7 @@ PigZombie = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Sheep = {
 	__proto__ : Object.create(Breedable),	
@@ -460,7 +460,7 @@ Sheep = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Skeleton = {
 	__proto__ : Object.create(Mob),	
@@ -471,7 +471,7 @@ Skeleton = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Slime = {
 	__proto__ : Object.create(Mob),	
@@ -482,7 +482,7 @@ Slime = {
 		def : 1,
 		value : null
 	}
-}
+};
 
 WitherBoss = {
 	__proto__ : Object.create(Mob),	
@@ -493,7 +493,7 @@ WitherBoss = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Wolf = {
 	__proto__ : Object.create(Tamable),
@@ -511,7 +511,7 @@ Wolf = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Villager = {
 	__proto__ : Object.create(Mob),	
@@ -581,7 +581,7 @@ Villager = {
 		},
 		value : null
 	}
-}
+};
 
 VillagerGolem = {
 	__proto__ : Object.create(Mob),	
@@ -592,7 +592,7 @@ VillagerGolem = {
 		def : 0,
 		value : null
 	}
-}
+};
 
 Zombie = {
 	__proto__ : Object.create(Mob),	
@@ -617,5 +617,5 @@ Zombie = {
 		def : -1,
 		value : null
 	}
-}
+};
 

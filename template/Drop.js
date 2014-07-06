@@ -9,7 +9,7 @@ Drop = {
 	},
 	age : {
 		name : "Age",
-		description : "The number of ticks the item has been "untouched". After 6000 ticks (5 minutes) the item is destroyed.",
+		description : "The number of ticks the item has been \"untouched\". After 6000 ticks (5 minutes) the item is destroyed.",
 		type : "int",
 		def : 6000,
 		value : null

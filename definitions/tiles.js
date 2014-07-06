@@ -6,7 +6,7 @@
 Tiles = {
 	meta : {
 		name : "minecraft",
-		type : "tile"
+		type : "tile",
 		defaultTextureFolder : "blocks"
 	},
 

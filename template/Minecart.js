@@ -30,7 +30,7 @@ Minecart = {
 	},
 	customName : {
 		name : "CustomName",
-		description : "Optional. The custom name of this minecart. ("@" by default for command block minecarts)",
+		description : "Optional. The custom name of this minecart. (\"@\" by default for command block minecarts)",
 		type : "string",
 		def : null,
 		value : null
@@ -136,7 +136,7 @@ MinecartSpawner = {
 	},
 	maxNearbyEntities : {
 		name : "MaxNearbyEntities",
-		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\"s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
+		description : "Overrides the maximum number of nearby (within a box of spawnrange*2+1 x spawnrange*2+1 x 8 centered around the spawner block) entities whose IDs match this spawner\"s entity ID. Note that this is relative to a mob\'s hitbox, not their physical position. Also note that all entities within all chunk sections (16x16x16 cubes) overlapped by this box are tested for their ID and hitbox overlap, rather than just entities which are within the box, meaning a large amount of entities outside the box (or within it, of course) can cause substantial lag.",
 		type : "short",
 		def : 8,
 		value : null

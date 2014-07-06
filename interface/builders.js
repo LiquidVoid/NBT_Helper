@@ -1,30 +1,33 @@
-function buildDesc(tag) {	//Creates description element
+//Creates description element
+function buildDesc(tag) {	
 	var desc = document.createElement("span");
 	desc.innerText = tag.description;
 	desc.className = "tagDescription";
 	
 	return desc;
 }
-function buildTitle(tag) {		//Creates title element
+//Creates title element
+
+function buildTitle(tag) {
 	var title = document.createElement("span");
-	if (tag.name != null) {
+	if (tag.name !== null) {
 		title.innerText = tag.name + ":";
 	}
 	else {
 		title.innerText = tag.dispName + ":";
 	}
 	title.className = "tagTitle";
-	
 	return title;
 }
 
-function makeNumLine(tag) {		//Creates a new line for inputing a umber
+//Creates a new line for imputing a umber
+function makeNumLine(tag) {		
 	var input = document.createElement("input");
 	input.type = "number";
 	input.value = tag.value;
 	input.onchange = function() {
 		set(input, tag);
-	}
+	};
 	
 	var title = buildTitle(tag);
 	var desc = buildDesc(tag);
@@ -37,13 +40,14 @@ function makeNumLine(tag) {		//Creates a new line for inputing a umber
 	
 	return line;
 }
+
 function makeTextLine(tag) {
 	var input = document.createElement("input");
 	input.type = "text";
 	input.value = tag.value;
 	input.onchange = function() {
 		set(input, tag);
-	}
+	};
 	
 	var title = buildTitle(tag);
 	var desc = buildDesc(tag);
@@ -56,6 +60,7 @@ function makeTextLine(tag) {
 	
 	return line;
 }
+
 function makeCompArea(template, tag) {
 	var area = document.createElement("li");
 	area.className = "line";
@@ -79,7 +84,8 @@ function makeCompArea(template, tag) {
 	return  area;
 }
 
-function add(template, too) {		//Adds new tags and their respective page elements
+//Adds new tags and their respective page elements
+function add(template, too) {		
 	var newTag = new Tag(template);
 	
 	switch (checkKind(newTag)) {
@@ -96,7 +102,7 @@ function add(template, too) {		//Adds new tags and their respective page element
 			throw new Error("Invalid case");
 	}
 	
-	too[template.name != null ? template.name : template.dispName] = newTag;
+	too[template.name !== null ? template.name : template.dispName] = newTag;
 	too.elem.appendChild(newTag.elem);
 }
 
