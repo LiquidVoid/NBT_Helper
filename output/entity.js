@@ -15,6 +15,6 @@ function compile(structure) {
 		first ? first = false : string += ",";
 		string += structure[i].toString();
 	}
-	
+
 	return string;
 }

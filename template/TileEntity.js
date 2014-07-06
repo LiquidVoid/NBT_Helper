@@ -414,7 +414,7 @@ Skull = {
 		type : "byte",
 		def : 0,
 		value : null
-	}	
+	}
 };
 Trap = {
 	__proto__ : Object.create(TileEntity),

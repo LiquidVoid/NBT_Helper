@@ -1,4 +1,4 @@
-Drop = { 
+Drop = {
 	__proto__ : Object.create(Entity),
 	health : {
 		name : "Health",

@@ -284,7 +284,7 @@ Creeper = {
 };
 
 Enderman = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	carried : {
 		name : "Carried",
 		description : "ID of the block carried by the Enderman. 0 when not carrying anything.",
@@ -390,7 +390,7 @@ EntityHorse = {
 };
 
 Ghast = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	explosionPower : {
 		name : "ExplosionPower",
 		description : "The radius of the explosion created by the fireballs this ghast fires. Default value of 1",
@@ -401,7 +401,7 @@ Ghast = {
 };
 
 LavaSlime = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	size : {
 		name : "Size",
 		description : "The size of the slime.",
@@ -434,7 +434,7 @@ Pig = {
 };
 
 PigZombie = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	anger : {
 		name : "Anger",
 		description : "Anger level. Determines the aggressivity of the creature towards players. 0 for neutral Zombie Pigmen.",
@@ -445,7 +445,7 @@ PigZombie = {
 };
 
 Sheep = {
-	__proto__ : Object.create(Breedable),	
+	__proto__ : Object.create(Breedable),
 	sheared : {
 		name : "Sheared",
 		description : "1 or 0 (true/false) - true if the sheep has been shorn.",
@@ -463,7 +463,7 @@ Sheep = {
 };
 
 Skeleton = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	skeletonType : {
 		name : "SkeletonType",
 		description : "0 for normal skeleton, 1 for wither skeleton.",
@@ -474,7 +474,7 @@ Skeleton = {
 };
 
 Slime = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	size : {
 		name : "Size",
 		description : "The size of the slime.",
@@ -485,7 +485,7 @@ Slime = {
 };
 
 WitherBoss = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	invul : {
 		name : "Invul",
 		description : "The number of ticks of invulnerability left after being initially created. 0 once invulnerability has expired.",
@@ -514,7 +514,7 @@ Wolf = {
 };
 
 Villager = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	profession : {
 		name : "Profession",
 		description : "The ID of the texture used for this villager. This also influences trading options.",
@@ -584,7 +584,7 @@ Villager = {
 };
 
 VillagerGolem = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	playerCreated : {
 		name : "PlayerCreated",
 		description : "1 or 0 (true/false) - true if this golem was created by a player.",
@@ -595,7 +595,7 @@ VillagerGolem = {
 };
 
 Zombie = {
-	__proto__ : Object.create(Mob),	
+	__proto__ : Object.create(Mob),
 	isVillager : {
 		name : "IsVillager",
 		description : "1 or 0 (true/false) - true if this is an infected villager. May be absent on non-villager zombies",

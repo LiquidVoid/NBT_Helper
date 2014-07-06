@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$antiCache = "?" . md5(time());
 	//$antiCache = "";
  ?>
@@ -7,9 +7,9 @@
 	<head>
 		<title>Minecraft NBT tag generator</title>
 		<link href="styles.css<?php echo $antiCache; ?>" rel="stylesheet" type="text/css">
-		
+
 		<script type="text/javascript" src="NBT.js<?php echo $antiCache; ?>"></script>
-		
+
 		<script type="text/javascript" src="template/Drop.js<?php echo $antiCache; ?>"></script>
 		<script type="text/javascript" src="template/Entity.js<?php echo $antiCache; ?>"></script>
 		<script type="text/javascript" src="template/Minecart.js<?php echo $antiCache; ?>"></script>
@@ -17,22 +17,22 @@
 		<script type="text/javascript" src="template/Projectile.js<?php echo $antiCache; ?>"></script>
 		<script type="text/javascript" src="template/TileEntity.js<?php echo $antiCache; ?>"></script>
 		<script type="text/javascript" src="template/Other.js<?php echo $antiCache; ?>"></script>
-		
+
 		<script type="text/javascript" src="definitions/entities.js<?php echo $antiCache; ?>"></script>
-		
+
 		<script type="text/javascript" src="interface/builders.js<?php echo $antiCache; ?>"></script>
-		
+
 		<script type="text/javascript" src="output/entity.js<?php echo $antiCache; ?>"></script>
-		
+
 		<script type="text/javascript">
 			var TAGS = {};
-			
+
 			function test() {
 				if (TAGS.elem) { TAGS.elem.innerHTML = ""; }
 				TAGS = {};
 				TAGS = newEntity(Entities[document.getElementById("entityList").value].template);
 			}
-			
+
 			function logWrite(text) {	//Writes lines to the log
 				var logElem = document.getElementById("output");
 				logElem.innerHTML = logElem.innerHTML + "\n" + text;
@@ -40,20 +40,20 @@
 			function out() {
 				document.getElementById("output").innerHTML = "{" + compile(TAGS) + "}";
 			}
-			
+
 			function set(input, tag) {	//Sets the value of a given tag to the value from a given input
 				newVal = getInput(input);
-				
+
 				if (tag.isValid(newVal)) {
 					tag.setVal(newVal);
 				}
 				else {
 					input.value = tag.value;
 				}
-				
+
 				out();
 			}
-			
+
 			function getInput(input) {	//Retrieves input from form elements, and converts it to the proper data type
 				if (input.type == "number") {
 					if (input.value % 1 == 0) {
@@ -67,11 +67,11 @@
 					return input.value;
 				}
 			}
-			
+
 			function setMidHeight() {
 				document.getElementById("midBox").style.height = (window.innerHeight) - 150 + "px";
 			}
-			
+
 			function addEntityList() {
 				var sel = document.getElementById("entityList");
 				for (var i in Entities) {
@@ -81,12 +81,12 @@
 					sel.appendChild(ch);
 				}
 			}
-					
+
 		</script>
-		
-		
+
+
 	</head>
-	
+
 	<body>
 		<div id="upperBox">
 			<span>NBT Entity: </span>
@@ -98,7 +98,7 @@
 			<ul id="inputs">
 			</ul>
 		</div>
-		<div id="lowerBox">		
+		<div id="lowerBox">
 <textarea id="output" readonly></textarea>
 			<div id="help">
 				<h4>Help:</h4>

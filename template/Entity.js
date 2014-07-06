@@ -159,7 +159,7 @@ Entity = {
 	},
 	riding : {
 		name : "Riding",
-		description : "The data of the entity being ridden. Note that if an entity is being ridden, the topmost entity in the stack has the Pos tag, and the coordinates specify the location of the bottommost entity. Also note that the bottommost entity controls movement, while the topmost entity determines spawning conditions when created by a mob spawner.",	
+		description : "The data of the entity being ridden. Note that if an entity is being ridden, the topmost entity in the stack has the Pos tag, and the coordinates specify the location of the bottommost entity. Also note that the bottommost entity controls movement, while the topmost entity determines spawning conditions when created by a mob spawner.",
 		type : "compound",
 		def : {},
 		value : null

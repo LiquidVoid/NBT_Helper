@@ -528,7 +528,7 @@ Tiles = {
 			name : "skull",
 			texture : "items/skull_skeleton",
 			id : "397"
-		}		
+		}
 	},
 
 	redstone : {
