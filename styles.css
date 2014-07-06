@@ -44,7 +44,7 @@ body {
 	border-top: 1px solid #F4F4F4;
 }
 #inputs li::before {
-	content: ' ';
+	content: " ";
 	border-left: ;1px solid #000000;
 	border-bottom: 1px solid #000000;
 	width: 10px;

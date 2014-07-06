@@ -11,7 +11,7 @@
 			var type;
 			var expected;
 			qString = 
-			ajax.open('GET', entitySql.php + qString, true)
+			ajax.open("GET", entitySql.php + qString, true)
 		</script>
 	</body>
 </html>

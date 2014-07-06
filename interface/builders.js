@@ -1,26 +1,26 @@
 function buildDesc(tag) {	//Creates description element
-	var desc = document.createElement('span');
+	var desc = document.createElement("span");
 	desc.innerText = tag.description;
-	desc.className = 'tagDescription';
+	desc.className = "tagDescription";
 	
 	return desc;
 }
 function buildTitle(tag) {		//Creates title element
-	var title = document.createElement('span');
+	var title = document.createElement("span");
 	if (tag.name != null) {
-		title.innerText = tag.name + ':';
+		title.innerText = tag.name + ":";
 	}
 	else {
-		title.innerText = tag.dispName + ':';
+		title.innerText = tag.dispName + ":";
 	}
-	title.className = 'tagTitle';
+	title.className = "tagTitle";
 	
 	return title;
 }
 
 function makeNumLine(tag) {		//Creates a new line for inputing a umber
-	var input = document.createElement('input');
-	input.type = 'number';
+	var input = document.createElement("input");
+	input.type = "number";
 	input.value = tag.value;
 	input.onchange = function() {
 		set(input, tag);
@@ -29,8 +29,8 @@ function makeNumLine(tag) {		//Creates a new line for inputing a umber
 	var title = buildTitle(tag);
 	var desc = buildDesc(tag);
 	
-	var line = document.createElement('li');
-	line.className = 'line';
+	var line = document.createElement("li");
+	line.className = "line";
 	line.appendChild(title);
 	line.appendChild(input);
 	line.appendChild(desc);
@@ -38,8 +38,8 @@ function makeNumLine(tag) {		//Creates a new line for inputing a umber
 	return line;
 }
 function makeTextLine(tag) {
-	var input = document.createElement('input');
-	input.type = 'text';
+	var input = document.createElement("input");
+	input.type = "text";
 	input.value = tag.value;
 	input.onchange = function() {
 		set(input, tag);
@@ -48,8 +48,8 @@ function makeTextLine(tag) {
 	var title = buildTitle(tag);
 	var desc = buildDesc(tag);
 	
-	var line = document.createElement('li');
-	line.className = 'line';
+	var line = document.createElement("li");
+	line.className = "line";
 	line.appendChild(title);
 	line.appendChild(input);
 	line.appendChild(desc);
@@ -57,14 +57,14 @@ function makeTextLine(tag) {
 	return line;
 }
 function makeCompArea(template, tag) {
-	var area = document.createElement('li');
-	area.className = 'line';
+	var area = document.createElement("li");
+	area.className = "line";
 	
-	var list = document.createElement('ul');
+	var list = document.createElement("ul");
 	tag.value.elem = list;
 	
 	for (var i in template) {
-		if (i != 'elem') {
+		if (i != "elem") {
 			add(template[i], tag.value);
 		}
 	}
@@ -83,17 +83,17 @@ function add(template, too) {		//Adds new tags and their respective page element
 	var newTag = new Tag(template);
 	
 	switch (checkKind(newTag)) {
-		case 'number' :
+		case "number" :
 			newTag.elem = makeNumLine(newTag);
 			break;
-		case 'text' :
+		case "text" :
 			newTag.elem = makeTextLine(newTag);
 			break;
-		case 'comp' :
+		case "comp" :
 			newTag.elem = makeCompArea(template.def, newTag);
 			break;
 		default:
-			throw new Error('Invalid case');
+			throw new Error("Invalid case");
 	}
 	
 	too[template.name != null ? template.name : template.dispName] = newTag;
@@ -102,7 +102,7 @@ function add(template, too) {		//Adds new tags and their respective page element
 
 function newEntity(template) {
 	var entity = {};
-	entity.elem = document.getElementById('inputs');
+	entity.elem = document.getElementById("inputs");
 	
 	for (var i in template) {
 		add(template[i], entity);
