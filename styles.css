@@ -54,7 +54,7 @@ body {
 
 #inputs li::before {
     content: " ";
-    border-left: ;1px solid #000000;
+    border-left: 1px solid #000000;
     border-bottom: 1px solid #000000;
     width: 10px;
     height: 10px;

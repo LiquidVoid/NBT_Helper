@@ -69,7 +69,7 @@ function makeCompArea( template, tag ) {
     tag.value.elem = list;
 
     for ( var i in template ) {
-        if ( i != "elem" ) {
+        if ( i !== "elem" ) {
             add( template[i], tag.value );
         }
     }

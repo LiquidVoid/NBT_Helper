@@ -7,7 +7,6 @@ $antiCache = "?" . md5( time() );
     <head>
         <title>Minecraft NBT tag generator</title>
         <link href="styles.css<?php echo $antiCache; ?>" rel="stylesheet" type="text/css">
-
         <script type="text/javascript" src="NBT.js<?php echo $antiCache; ?>"></script>
 
         <script type="text/javascript" src="template/Drop.js<?php echo $antiCache; ?>"></script>
@@ -17,11 +16,8 @@ $antiCache = "?" . md5( time() );
         <script type="text/javascript" src="template/Projectile.js<?php echo $antiCache; ?>"></script>
         <script type="text/javascript" src="template/TileEntity.js<?php echo $antiCache; ?>"></script>
         <script type="text/javascript" src="template/Other.js<?php echo $antiCache; ?>"></script>
-
         <script type="text/javascript" src="definitions/entities.js<?php echo $antiCache; ?>"></script>
-
         <script type="text/javascript" src="interface/builders.js<?php echo $antiCache; ?>"></script>
-
         <script type="text/javascript" src="output/entity.js<?php echo $antiCache; ?>"></script>
 
         <script type="text/javascript">
@@ -57,8 +53,8 @@ $antiCache = "?" . md5( time() );
             }
 
             function getInput( input ) {	//Retrieves input from form elements, and converts it to the proper data type
-                if ( input.type == "number" ) {
-                    if ( input.value % 1 == 0 ) {
+                if ( input.type === "number" ) {
+                    if ( input.value % 1 === 0 ) {
                         return parseInt( input.value );
                     }
                     else {
@@ -113,7 +109,7 @@ $antiCache = "?" . md5( time() );
         setMidHeight();
         window.onresize = function() {
             setMidHeight();
-        }
+        };
         addEntityList();
     </script>
 </html>
