@@ -41,15 +41,17 @@ function Tag( template ) {
 		}
 	};
 
-	function isInt( n ) {//Checks that n is not floating point, and
-		// that it is a number.
+	//Checks that n is not floating point, and
+	//that it is a number.
+	function isInt( n ) {
 		return ( typeof n == "number" ) && ( n % 1 === 0 );
 	}
 
 
 	this.toString = function( ) {
 		var name = "";
-		if ( this.name !== null ) {//When there is a name
+		//When there is a name
+		if ( this.name !== null ) {
 			name = this.name + ":";
 			//We define it, or else it will be an empty string
 		}

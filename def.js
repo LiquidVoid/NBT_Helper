@@ -1,6 +1,8 @@
 // Add expected perameter
+
 // Fix the defaults for strings to "", make sure everything has a
 // default
+
 // Add options (like in vilager) where nessesary
 
 // Inheritances
@@ -132,7 +134,7 @@ Entity = {
 		def : 0,
 		value : null
 	},
-	portalCooldown : {// [NOTE] Need to verify default setting
+	portalCooldown : {
 		name : "PortalCooldown",
 		description : "The number of ticks before which the entity may be teleported back through a portal of any kind. Initially starts at 900 ticks (45 seconds) after teleportation and counts down to 0.",
 		type : "int",

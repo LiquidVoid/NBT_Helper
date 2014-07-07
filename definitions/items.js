@@ -1,12 +1,3 @@
-// IMPORTANT FOR THE TEXTURES:
-// The function to read texture location need to check if there
-// is a "/" and if so split them up into folders.
-//Class = .meta.name
-// If there isn't anything except the texture name then use
-// %Class%.meta.defaultTextureFolder for the folder and
-// %Class%.%group%.%item%.texture
-// For the name and then add on .png to the end of it.
-
 Items = {
 	meta : {
 		name : "minecraft",
