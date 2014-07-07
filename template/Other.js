@@ -1,13 +1,19 @@
+//  Boat
 Boat = {
     __proto__ : Object.create( Entity )
 };
 
+//  Ender Crystal ( End Healers )
 EnderCrystal = {
     __proto__ : Object.create( Entity )
 };
+
+//  Eye of Ender Signal ( Eye of Ender )
 EyeOfEnderSignal = {
     __proto__ : Object.create( Entity )
 };
+
+//  Fireworks Rocket Entity ( Firework )
 FireworksRocketEntity = {
     __proto__ : Object.create( Entity ),
     life : {
@@ -32,6 +38,8 @@ FireworksRocketEntity = {
         value : null
     }
 };
+
+//  Item Frame
 ItemFrame = {
     __proto__ : Object.create( Entity ),
     tileX : {
@@ -91,9 +99,13 @@ ItemFrame = {
         value : null
     }
 };
+
+//  Leash Knot
 LeashKnot = {
     __proto__ : Object.create( Entity )
 };
+
+//  Painting
 Painting = {
     __proto__ : Object.create( Entity ),
     tileX : {

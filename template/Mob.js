@@ -1,3 +1,4 @@
+//  Mob Template
 Mob = {
     __proto__ : Object.create( Entity ),
     health : {
@@ -197,8 +198,7 @@ Mob = {
 };
 
 
-//	Sub classes
-
+//  Breedable <- Mob Template
 Breedable = {
     __proto__ : Object.create( Mob ),
     inLove : {
@@ -217,7 +217,7 @@ Breedable = {
     }
 };
 
-
+//  Tamable <- Mob Template
 Tamable = {
     __proto__ : Object.create( Breedable ),
     owner : {
@@ -236,10 +236,7 @@ Tamable = {
     }
 };
 
-
-
-//	Mobs
-
+//  Bat
 Bat = {
     __proto__ : Object.create( Mob ),
     batFlags : {
@@ -251,6 +248,7 @@ Bat = {
     }
 };
 
+//  Creeper
 Creeper = {
     __proto__ : Object.create( Mob ),
     powered : {
@@ -283,6 +281,7 @@ Creeper = {
     }
 };
 
+//  Enderman
 Enderman = {
     __proto__ : Object.create( Mob ),
     carried : {
@@ -301,6 +300,7 @@ Enderman = {
     }
 };
 
+//  EntityHorse
 EntityHorse = {
     __proto__ : Object.create( Breedable ),
     bred : {
@@ -389,6 +389,7 @@ EntityHorse = {
     }
 };
 
+//  Ghast
 Ghast = {
     __proto__ : Object.create( Mob ),
     explosionPower : {
@@ -400,6 +401,7 @@ Ghast = {
     }
 };
 
+//  LavaSlime
 LavaSlime = {
     __proto__ : Object.create( Mob ),
     size : {
@@ -411,6 +413,7 @@ LavaSlime = {
     }
 };
 
+//  Ozelot
 Ozelot = {
     __proto__ : Object.create( Tamable ),
     catType : {
@@ -422,6 +425,7 @@ Ozelot = {
     }
 };
 
+//  Pig
 Pig = {
     __proto__ : Object.create( Breedable ),
     saddle : {
@@ -433,6 +437,7 @@ Pig = {
     }
 };
 
+//  PigZombie
 PigZombie = {
     __proto__ : Object.create( Mob ),
     anger : {
@@ -444,6 +449,7 @@ PigZombie = {
     }
 };
 
+//  Sheep
 Sheep = {
     __proto__ : Object.create( Breedable ),
     sheared : {
@@ -462,6 +468,7 @@ Sheep = {
     }
 };
 
+//  Skeleton
 Skeleton = {
     __proto__ : Object.create( Mob ),
     skeletonType : {
@@ -473,6 +480,7 @@ Skeleton = {
     }
 };
 
+//  Slime
 Slime = {
     __proto__ : Object.create( Mob ),
     size : {
@@ -484,6 +492,7 @@ Slime = {
     }
 };
 
+//  WitherBoss
 WitherBoss = {
     __proto__ : Object.create( Mob ),
     invul : {
@@ -495,6 +504,7 @@ WitherBoss = {
     }
 };
 
+//  Wolf
 Wolf = {
     __proto__ : Object.create( Tamable ),
     angry : {
@@ -513,6 +523,7 @@ Wolf = {
     }
 };
 
+//  Villager
 Villager = {
     __proto__ : Object.create( Mob ),
     profession : {
@@ -583,6 +594,7 @@ Villager = {
     }
 };
 
+//  VillagerGolem
 VillagerGolem = {
     __proto__ : Object.create( Mob ),
     playerCreated : {
@@ -594,6 +606,7 @@ VillagerGolem = {
     }
 };
 
+//  Zombie
 Zombie = {
     __proto__ : Object.create( Mob ),
     isVillager : {

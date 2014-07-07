@@ -1,3 +1,4 @@
+//  Projectile Template
 Projectile = {
     __proto__ : Object.create( Entity ),
     xTile : {
@@ -37,8 +38,7 @@ Projectile = {
     }
 };
 
-//	Projectiles
-
+//  Arrorw
 Arrow = {
     __proto__ : Object.create( Projectile ),
     inData : {
@@ -70,6 +70,8 @@ Arrow = {
         value : null
     }
 };
+
+//  Snowball
 Snowball = {
     __proto__ : Object.create( Projectile ),
     ownerName : {
@@ -80,9 +82,13 @@ Snowball = {
         value : null
     }
 };
+
+//  Egg
 Egg = {
     __proto__ : Object.create( Projectile )
 };
+
+// Fireball ( Ghast )
 Fireball = {
     __proto__ : Object.create( Projectile ),
     direction : {
@@ -118,6 +124,8 @@ Fireball = {
         value : null
     }
 };
+
+// Small Fireball ( Blaze )
 SmallFireball = {
     __proto__ : Object.create( Projectile ),
     direction : {
@@ -153,6 +161,8 @@ SmallFireball = {
         value : null
     }
 };
+
+//  Thrown Enderpearl
 ThrownEnderpearl = {
     __proto__ : Object.create( Projectile ),
     ownerName : {
@@ -163,6 +173,8 @@ ThrownEnderpearl = {
         value : null
     }
 };
+
+//  Thrown Exp Bottle
 ThrownExpBottle = {
     __proto__ : Object.create( Projectile ),
     ownerName : {
@@ -173,6 +185,8 @@ ThrownExpBottle = {
         value : null
     }
 };
+
+//  Thrown Potion
 ThrownPotion = {
     __proto__ : Object.create( Projectile ),
     ownerName : {
@@ -197,6 +211,8 @@ ThrownPotion = {
         value : null
     }
 };
+
+//  Wither Skull
 WitherSkull = {
     __proto__ : Object.create( Projectile ),
     direction : {

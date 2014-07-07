@@ -1,3 +1,4 @@
+//  Minecart Template
 Minecart = {
     __proto__ : Object.create( Entity ),
     customDisplayTile : {
@@ -37,11 +38,12 @@ Minecart = {
     }
 };
 
-//	Carts
-
+//  Minecart ( Standard )
 MinecartRideable = {
     __proto__ : Object.create( Minecart )
 };
+
+//  Minecart ( Chest )
 MinecartChest = {
     __proto__ : Object.create( Minecart ),
     items : {
@@ -52,6 +54,8 @@ MinecartChest = {
         value : null
     }
 };
+
+//  Minecart ( Furnace )
 MinecartFurnace = {
     __proto__ : Object.create( Minecart ),
     pushX : {
@@ -76,6 +80,8 @@ MinecartFurnace = {
         value : null
     }
 };
+
+//  Minecart ( Spawner )
 MinecartSpawner = {
     __proto__ : Object.create( Minecart ),
     spawnPotentials : {
@@ -149,6 +155,8 @@ MinecartSpawner = {
         value : null
     }
 };
+
+//  Minecart ( TNT )
 MinecartTNT = {
     __proto__ : Object.create( Minecart ),
     tntFuse : {
@@ -159,6 +167,8 @@ MinecartTNT = {
         value : null
     }
 };
+
+//  Minecart (Hopper)
 MinecartHopper = {
     __proto__ : Object.create( Minecart ),
     items : {
@@ -176,6 +186,8 @@ MinecartHopper = {
         value : null
     }
 };
+
+//  Minecart ( Command Block )
 MinecartCommandBlock = {
     __proto__ : Object.create( Minecart ),
     command : {

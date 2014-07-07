@@ -6,8 +6,8 @@ function buildDesc( tag ) {
 
     return desc;
 }
-//Creates title element
 
+//Creates title element
 function buildTitle( tag ) {
     var title = document.createElement( "span" );
     if ( tag.name !== null ) {

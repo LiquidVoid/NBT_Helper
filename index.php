@@ -1,8 +1,5 @@
-<?php
-$antiCache = "?" . md5( time() );
-//$antiCache = "";
-?>
 <!doctype html>
+<?php $antiCache = "?" . md5( time() ); ?>
 <html>
     <head>
         <title>Minecraft NBT tag generator</title>
@@ -31,7 +28,8 @@ $antiCache = "?" . md5( time() );
                 TAGS = newEntity( Entities[document.getElementById( "entityList" ).value].template );
             }
 
-            function logWrite( text ) {	//Writes lines to the log
+            //Writes lines to the log
+            function logWrite( text ) {
                 var logElem = document.getElementById( "output" );
                 logElem.innerHTML = logElem.innerHTML + "\n" + text;
             }
@@ -39,7 +37,8 @@ $antiCache = "?" . md5( time() );
                 document.getElementById( "output" ).innerHTML = "{" + compile( TAGS ) + "}";
             }
 
-            function set( input, tag ) {	//Sets the value of a given tag to the value from a given input
+            //Sets the value of a given tag to the value from a given input
+            function set( input, tag ) {
                 newVal = getInput( input );
 
                 if ( tag.isValid( newVal ) ) {
@@ -52,7 +51,8 @@ $antiCache = "?" . md5( time() );
                 out();
             }
 
-            function getInput( input ) {	//Retrieves input from form elements, and converts it to the proper data type
+            //Retrieves input from form elements, and converts it to the proper data type
+            function getInput( input ) {
                 if ( input.type === "number" ) {
                     if ( input.value % 1 === 0 ) {
                         return parseInt( input.value );

@@ -1,3 +1,4 @@
+//  Entity Template
 Entity = {
     id : {
         name : "id",
@@ -168,8 +169,7 @@ Entity = {
 };
 
 
-// Dynamic Tiles
-
+// Dynamic Tile ( Primed TNT )
 PrimedTnt = {
     __proto__ : Object.create( Entity ),
     fuse : {
@@ -181,6 +181,7 @@ PrimedTnt = {
     }
 };
 
+// Dynamic Tile ( Falling Sand )
 FallingSand = {
     __proto__ : Object.create( Entity ),
     tileID : {

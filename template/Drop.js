@@ -1,3 +1,4 @@
+//  Drop Template
 Drop = {
     __proto__ : Object.create( Entity ),
     health : {
@@ -16,8 +17,7 @@ Drop = {
     }
 };
 
-//	Drops
-
+//  Drop ( Item )
 ItemDrop = {
     __proto__ : Object.create( Drop ),
     item : {
@@ -28,6 +28,8 @@ ItemDrop = {
         value : null
     }
 };
+
+//  Drop ( XP Orb )
 XPOrb = {
     __proto__ : Object.create( Drop ),
     value : {

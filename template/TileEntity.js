@@ -31,9 +31,13 @@ TileEntity = {
 
 // Tile Entities
 
+
+//  Airportal ( End Portal )
 Airportal = {
     __proto__ : Object.create( TileEntity )
 };
+
+//  Beacon
 Beacon = {
     __proto__ : Object.create( TileEntity ),
     levels : {
@@ -58,6 +62,8 @@ Beacon = {
         value : null
     }
 };
+
+//  Cauldron
 Cauldron = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -82,6 +88,8 @@ Cauldron = {
         value : null
     }
 };
+
+//  Chest
 Chest = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -99,6 +107,8 @@ Chest = {
         value : null
     }
 };
+
+//  Comparator
 Comparator = {
     __proto__ : Object.create( TileEntity ),
     outputSignal : {
@@ -109,6 +119,8 @@ Comparator = {
         value : null
     }
 };
+
+//  Control ( Command Block )
 Control = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -133,9 +145,13 @@ Control = {
         value : null
     }
 };
+
+//  DLDetector ( Day Light Dector )
 DLDetector = {
     __proto__ : Object.create( TileEntity )
 };
+
+//  Dropper
 Dropper = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -153,6 +169,8 @@ Dropper = {
         value : null
     }
 };
+
+//  Enchant Table
 EnchantTable = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -163,9 +181,13 @@ EnchantTable = {
         value : null
     }
 };
+
+//  EnderChest
 EnderChest = {
     __proto__ : Object.create( TileEntity )
 };
+
+//  Furnace
 Furnace = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -197,6 +219,8 @@ Furnace = {
         value : null
     }
 };
+
+//  Hopper
 Hopper = {
     __proto__ : Object.create( TileEntity ),
     customName : {
@@ -222,6 +246,8 @@ Hopper = {
         value : null
     }
 };
+
+//  MobS pawner
 MobSpawner = {
     __proto__ : Object.create( TileEntity ),
     spawnPotentials : {
@@ -296,6 +322,8 @@ MobSpawner = {
         value : null
     }
 };
+
+//  Music
 Music = {
     __proto__ : Object.create( TileEntity ),
     note : {
@@ -306,6 +334,8 @@ Music = {
         value : null
     }
 };
+
+//  Piston
 Piston = {
     __proto__ : Object.create( TileEntity ),
     blockId : {
@@ -344,6 +374,8 @@ Piston = {
         value : null
     }
 };
+
+//  Record Player
 RecordPlayer = {
     __proto__ : Object.create( TileEntity ),
     record : {
@@ -361,6 +393,8 @@ RecordPlayer = {
         value : null
     }
 };
+
+//  Sign
 Sign = {
     __proto__ : Object.create( TileEntity ),
     text1 : {
@@ -392,6 +426,8 @@ Sign = {
         value : null
     }
 };
+
+//  Skull
 Skull = {
     __proto__ : Object.create( TileEntity ),
     skullType : {
@@ -416,6 +452,8 @@ Skull = {
         value : null
     }
 };
+
+//  Trap
 Trap = {
     __proto__ : Object.create( TileEntity ),
     customName : {
