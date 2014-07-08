@@ -51,8 +51,8 @@
 				out( );
 			}
 
-			//Retrieves input from form elements, and converts it to the
-			// proper data type
+			//Retrieves input from form elements, 
+			//and converts it to the proper data type
 			function getInput( input ) {
 				if ( input.type === "number" ) {
 					if ( input.value % 1 === 0 ) {
