@@ -97,7 +97,8 @@ Tiles = {
 		wool : {
 			name : "wool",
 			texture : "wool_colored_white",
-			id : "35"
+			id : "35",
+			meta : [ "white", "orange", "magenta", "light blue", "yellow", "lime", "pink", "grey", "cyan", "purple", "blue", "brown", "green", "red", "black" ]
 		},
 		gold_block : {
 			name : "gold_block",
@@ -202,7 +203,8 @@ Tiles = {
 		stained_glass : {
 			name : "stained_glass",
 			texture : "glass", //[ALERT]
-			id : "95"
+			id : "95",
+			meta : [ "white", "orange", "magenta", "light blue", "yellow", "lime", "pink", "grey", "cyan", "purple", "blue", "brown", "green", "red", "black" ]
 		},
 		stonebrick : {
 			name : "stonebrick",
@@ -671,7 +673,7 @@ Tiles = {
 	},
 	foodstuff : {
 		meta : {
-			name : "Foodstuff",
+			name : "Food Stuff",
 			texture : "items/apple"
 		}
 
